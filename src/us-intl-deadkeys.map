@@ -16,7 +16,7 @@ keycode   3 = two              at
 	altgr keycode  3 = twosuperior
 	shift altgr keycode  3 = dead_doubleacute #looks like a dead_tilde in the end replacement by dead_diaeresis or ´´
 keycode   4 = three            numbersign
-	#control	keycode   4 = Escape
+	control	keycode   4 = Escape
 	alt	keycode   4 = Meta_three
 	shift	alt	keycode   4 = Meta_numbersign
 	altgr keycode  4 = threesuperior
@@ -68,44 +68,34 @@ keycode  14 = Delete           Delete
 keycode  15 = Tab              Tab
 	alt	keycode  15 = Meta_Tab
 	shift	keycode  15 = Meta_Tab
-keycode  16 = +q	+Q
-	control keycode 16 = Control_q #unfreeze display after ctrl_s
+keycode  16 = q
 	altgr keycode  16 = +adiaeresis
 	shift altgr keycode  16 = +Adiaeresis
-keycode  17 = +w	+W
-	control keycode 17 = Control_w #deletes last word typed
+keycode  17 = w
 	altgr keycode  17 = +aring
 	shift altgr keycode  17 = +Aring
-keycode  18 = +e	+E
-	control keycode 18 = Control_e #goes to the end of the line
+keycode  18 = e
 	altgr keycode  18 = +eacute
 	shift altgr keycode  18 = +Eacute
-keycode  19 = +r	+R
-	control keycode 19 = Control_r #reverse search
+keycode  19 = r
 	altgr keycode  19 = registered
 	shift altgr keycode  19 = registered
-keycode  20 = +t	+T
-	control keycode 20 = Control_t #Swap positions of the current and previous chars, and advance one char forward on the command line
+keycode  20 = t
 	altgr keycode  20 = +thorn
 	shift altgr keycode  20 = +THORN
-keycode  21 = +y	+Y
-	control keycode 21 = Control_y #Copy previously killed text (^W, ^K, ^U, ...) onto the current command line (functioning in effect as cut&paste) 
+keycode  21 = y
 	altgr keycode  21 = +udiaeresis
 	shift altgr keycode  21 = +Udiaeresis
-keycode  22 = +u	+U
-	control keycode 22 = Control_u #deletes last line typed
+keycode  22 = u
 	altgr keycode  22 = +uacute
 	shift altgr keycode  22 = +Uacute
-keycode  23 = +i	+I
-	control keycode 23 = Control_i #Move the cursor to the next column divisible by eight (for alignment)/autocomplete commands and file names 
+keycode  23 = i
 	altgr keycode  23 = +iacute
 	shift altgr keycode  23 = +Iacute
-keycode  24 = +o	+O
-	control keycode 24 = Control_o #Execute the current command and start editing the next history entry (for redoing multiple commands that need small edits)
+keycode  24 = o
 	altgr keycode  24 = +oacute
 	shift altgr keycode  24 = +Oacute
-keycode  25 = +p	+P
-	control keycode 25 = Control_p #Move to previous (earlier) history entry (same as up-arrow)
+keycode  25 = p
 	altgr keycode  25 = +odiaeresis
 	shift altgr keycode  25 = +Odiaeresis
 keycode  26 = bracketleft      braceleft
@@ -115,7 +105,7 @@ keycode  26 = bracketleft      braceleft
 	altgr keycode  26 = guillemotleft
 	shift altgr keycode  26 = quotedbl #no leftdoublequotemark
 keycode  27 = bracketright     braceright
-	control	keycode   27 = Control_bracketright #Search char forward, pressing ^] V will place the cursor on the next V on the current command line
+	control	keycode  27 = Control_bracketright #Search char forward, pressing ^] V will place the cursor on the next V on the current command line
 	alt	keycode  27 = Meta_bracketright
 	shift	alt	keycode  27 = Meta_braceright
 	altgr keycode  27 = guillemotright
@@ -123,43 +113,26 @@ keycode  27 = bracketright     braceright
 keycode  28 = Return
 	alt	keycode  28 = Meta_Control_m
 keycode  29 = Control
-keycode  30 = +a	+A
-	control keycode 30 = Control_a #GNU screen multifunction key
+keycode  30 = a
 	altgr keycode  30 = +aacute
 	shift altgr keycode  30 = +Aacute
 #for french people
 #	altgr keycode  30 = +agrave
 #	shift altgr keycode  30 = +Agrave
-keycode  31 = +s	+S
-	control keycode 31 = Control_s	#freeze screen
+keycode  31 = s
 	altgr keycode  31 = ssharp
 	shift altgr keycode  31 = section
-keycode  32 = +d	+D
-	control keycode 32 = Control_d #ends text input for many 
+keycode  32 = d
 	altgr keycode  32 = +otilde
 	shift altgr keycode  32 = +ETH
-keycode  33 = +f	+F
-	control keycode 33 = Control_f #One char forward (like right-arrow)
-	altgr keycode  33 = +f
-	shift altgr keycode  33 = +F
-keycode  34 = +g	+G
-	control keycode 34 = Control_g #Abort the current editing command (for composite command such as M-5 Up-Arrow (M-5 meaning Meta-5 or Alt+5) which would repeat the Up-Arrow action five times. Pressing ^G after M-5 would abort it, meaning a subsequent Up-Arrow key would just function as normal and just act once)
-	altgr keycode  34 = +g
-	shift altgr keycode  34 = +G
-keycode  35 = +h	+H
-	control keycode 35 = Control_h #deletes last character typed
-	altgr keycode  35 = +h
-	shift altgr keycode  35 = +H
-keycode  36 = +j	+J
-	control keycode 36 = Control_j #Move the cursor to the next line*/ Execute the current command line
-	altgr keycode  36 = +j
-	shift altgr keycode  36 = +J
-keycode  37 = +k	+K
-	control keycode 37 = Control_k #Remove the parts of the command line after the cursor
+keycode  33 = f
+keycode  34 = g
+keycode  35 = h
+keycode  36 = j
+keycode  37 = k
 	altgr keycode  37 = +oe 
 	shift altgr keycode  37 = +OE
-keycode  38 = +l	+L
-	control keycode 38 = Control_l #clear screen
+keycode  38 = l
 	altgr keycode  38 = +oslash
 	shift altgr keycode  38 = +Oslash
 keycode  39 = semicolon        colon
@@ -183,32 +156,21 @@ keycode  43 = backslash        bar
 	shift	alt	keycode  43 = Meta_bar
 	altgr keycode  43 = notsign
 	shift altgr keycode  43 = brokenbar
-keycode  44 = +z	+Z
-	control keycode 44 = Control_z #supends running program
-	altgr keycode  44 = +z
-	shift altgr keycode  44 = +Z
-keycode  45 = +x	+X
-	control keycode 45 = Control_x #Bash multifunction key. One command is ^X^E which will invoke the users editor on the current command and execute it when they exit the editor (very useful for long command lines)
+keycode  44 = z
+keycode  45 = x
 	altgr keycode  45 = +oe
 	shift altgr keycode  45 = +OE
-keycode  46 = +c	+C
-	control keycode 46 = Control_c #interrupt program
+keycode  46 = c
 	altgr keycode  46 = +copyright
 	shift altgr keycode  46 = +cent
-keycode  47 = +v	+V
-	control keycode 47 = Control_v #Insert the next character literally, one can use ^V^S to type a ^S character rather than stop the terminal.
+keycode  47 = v
 	altgr keycode  47 = registered
 	shift altgr keycode  47 = registered
-keycode  48 = +b	+B
-	control keycode 48 = Control_b #One char backwards (like left-arrow)
-	altgr keycode  48 = +b
-	shift altgr keycode  48 = +B
-keycode  49 = +n	+N
-	control keycode 49 = Control_n #Move to next (more recent) history entry (same as down-arrow)
+keycode  48 = b
+keycode  49 = n
 	altgr keycode  49 = +ntilde
 	shift altgr keycode  49 = +Ntilde
-keycode  50 = +m	+M
-	control keycode 50 = Control_m #Move the cursor to the next line* / Execute the current command line
+keycode  50 = m
 	altgr keycode  50 = mu
 	shift altgr keycode  50 = mu
 keycode  51 = comma            less
@@ -217,7 +179,7 @@ keycode  51 = comma            less
 	altgr keycode  51 = ccedilla
 	shift altgr keycode  51 = Ccedilla
 keycode  52 = period           greater
-	#control	keycode  52 = Compose
+	control	keycode  52 = Compose
 	alt	keycode  52 = Meta_period
 	shift	alt	keycode  52 = Meta_greater
 	#altgr keycode  52 = dead_abovedot $ not existing
@@ -484,9 +446,17 @@ compose '"' 'Y' to Ydiaeresis #not iso8859-1 to check
 
 compose '\'' 'c' to cacute
 compose '\'' 'C' to Cacute
+compose '^' 'c' to ccircumflex
+compose '^' 'C' to Ccircumflex
 #compose '`' 'n' to ''  #ngrave not existing and not iso8859-1
 #compose '\'' 'g' to '' #gacute not existing
 #compose '\'' 'G' to '' #Gacute not existing
+compose '^' 'g' to gcircumflex #is it iso
+compose '^' 'G' to Gcircumflex #is it iso
+compose '^' 'h' to hcircumflex #is it iso
+compose '^' 'H' to Hcircumflex #is it iso
+compose '^' 'j' to jcircumflex #is it iso
+compose '^' 'J' to Jcircumflex #is it iso
 #compose '\'' 'k' to '' #kacute not existing
 #compose '\'' 'K' to '' #Kacute not existing
 compose '\'' 'l' to lacute
@@ -504,12 +474,17 @@ compose '\'' 'R' to Racute
 compose '\'' 's' to sacute
 compose '\'' 'S' to Sacute
 #compose '"' 't' to '' #tdiaeresis not existing
+#compose dead_cedilla 't' to tcedilla #not existing can't compose with cedilla
 #compose '\'' 'w' to '' #wacute not existing
 #compose '\'' 'W' to '' #Wacute not existing
 #compose '`'' 'w' to '' #wgrave not existing
 #compose '`' 'W' to '' #Wgrave not existing
-compose '\'' 'z' to zacute
-compose '\'' 'Z' to Zacute
+#compose '^' 'w' to '' #wcircumflex not existing
+#compose '^' 'W' to '' #Wcircumflex not existing
+compose '\'' 'z' to zacute #is it iso
+compose '\'' 'Z' to Zacute #is it iso
+#compose '^' 'z' to '' #zcircumflex not existing not iso8859-1
+#compose '^' 'Z' to '' #Zcircumflex not existing not iso8859-1
 ## Powers
 compose '^' '0' to degree #keysym zerosuperior doesn't exist
 compose '^' '1' to onesuperior
