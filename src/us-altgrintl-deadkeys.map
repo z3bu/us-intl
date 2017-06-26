@@ -489,11 +489,23 @@ compose '\'' 'z' to zacute #is it iso
 compose '\'' 'Z' to Zacute #is it iso
 compose '^' 'z' to U+1E91 #zcircumflex not existing
 compose '^' 'Z' to U+1E90 #Zcircumflex not existing
-## Powers
-compose '^' '0' to degree #keysym zerosuperior doesn't exist
-compose '^' '1' to onesuperior
-compose '^' '2' to twosuperior
-compose '^' '3' to threesuperior
+## Superscripts
+compose '^' '0' to degree #keysym zerosuperior doesn't exist U+2070
+compose '^' '1' to onesuperior # U+2071
+compose '^' '2' to twosuperior # U+2072
+compose '^' '3' to threesuperior # U+2073
+compose '^' '4' to U+2074
+compose '^' '5' to U+2075
+compose '^' '6' to U+2076
+compose '^' '7' to U+2077
+compose '^' '8' to U+2078
+compose '^' '9' to U+2079
+compose '^' '+' to U+207A
+compose '^' '-' to macron
+compose '^' '=' to U+207C
+compose '^' '(' to U+207D
+compose '^' ')' to U+207E
+
 
 #Misc impossible
 #ae(acute)(altgr z + dead_acute)
