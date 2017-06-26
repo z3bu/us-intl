@@ -393,12 +393,12 @@ compose '\'' 'e' to eacute
 compose '`' 'e' to egrave
 compose '^' 'e' to ecircumflex
 compose '"' 'e' to ediaeresis
-#compose '~' 'e' to etilde #not iso8859-1 not a keysym replace by diaeresis?
+compose '~' 'e' to U+1EBD #etilde not iso8859-1 not a keysym replace by diaeresis?
 compose '\'' 'E' to Eacute
 compose '`' 'E' to Egrave
 compose '^' 'E' to Ecircumflex
 compose '"' 'E' to Ediaeresis
-#compose '~' 'E' to Etilde #not iso8859-1 not a keysym replace by diaeresis?
+compose '~' 'E' to U+1EBC # not iso8859-1 not a keysym replace by diaeresis?
 ##  I
 compose '\'' 'i' to iacute
 compose '`' 'i' to igrave
@@ -434,57 +434,58 @@ compose '"' 'U' to Udiaeresis
 compose '~' 'U' to Utilde #not iso8859-1
 ## Y
 compose '\'' 'y' to yacute
-#compose '`' 'y' to ygrave #not iso8859-1 not a keysym
-#compose '^' 'y' to ycircumflex'' #not iso8859-1 not a keysym
+compose '`' 'y' to U+1EF3 #ygrave #not a keysym
+compose '^' 'y' to U+0177 #ycircumflex not a keysym
 compose '"' 'y' to ydiaeresis
-#compose '~' 'y' to ytilde #not iso8859-1 not a keysym
+compose '~' 'y' to U+1EF9 #ytilde not a keysym
 compose '\'' 'Y' to Yacute
-#compose '`' 'Y' to '' #not iso8859-1
-#compose '^' 'Y' to '' #not iso8859-1
-compose '"' 'Y' to Ydiaeresis #not iso8859-1 to check
-#compose '~' 'Y' to Ytilde #not iso8859-1 not a keysim
+compose '`' 'Y' to U+1EF2 #no keysym
+compose '^' 'Y' to U+0176 #Ycircumflex
+compose '"' 'Y' to Ydiaeresis #not iso8859-1
+compose '~' 'Y' to U+1EF8 #Ytilde not a keysim
 
 compose '\'' 'c' to cacute
 compose '\'' 'C' to Cacute
 compose '^' 'c' to ccircumflex
 compose '^' 'C' to Ccircumflex
-#compose '`' 'n' to ''  #ngrave not existing and not iso8859-1
-#compose '\'' 'g' to '' #gacute not existing
-#compose '\'' 'G' to '' #Gacute not existing
+compose '`' 'n' to U+01F9  #ngrave not existing
+compose '`' 'N' to U+01F8  #ngrave not existing
+compose '\'' 'g' to U+0EF5 #gacute not existing
+compose '\'' 'G' to U+0EF4 #Gacute not existing
 compose '^' 'g' to gcircumflex #is it iso
 compose '^' 'G' to Gcircumflex #is it iso
 compose '^' 'h' to hcircumflex #is it iso
 compose '^' 'H' to Hcircumflex #is it iso
 compose '^' 'j' to jcircumflex #is it iso
 compose '^' 'J' to Jcircumflex #is it iso
-#compose '\'' 'k' to '' #kacute not existing
-#compose '\'' 'K' to '' #Kacute not existing
+compose '\'' 'k' to U+1E31 #kacute not existing
+compose '\'' 'K' to U+1E30 #Kacute not existing
 compose '\'' 'l' to lacute
 compose '\'' 'L' to Lacute
-#compose '\'' 'm' to '' #macute not existing
-#compose '\'' 'M' to '' #Macute not existing
+compose '\'' 'm' to U+1E3F #macute not existing
+compose '\'' 'M' to U+1E3E #Macute not existing
 compose '~' 'n' to ntilde
 compose '~' 'N' to Ntilde
 compose '\'' 'n' to nacute
 compose '\'' 'N' to Nacute
-#compose '\'' 'p' to '' #pacute not existing
-#compose '\'' 'P' to '' #Pacute not existing
+compose '\'' 'p' to U+1E55 #pacute not existing
+compose '\'' 'P' to U+1E54 #Pacute not existing
 compose '\'' 'r' to racute
 compose '\'' 'R' to Racute
 compose '\'' 's' to sacute
 compose '\'' 'S' to Sacute
-#compose '"' 't' to '' #tdiaeresis not existing
+compose '"' 't' to U+1E97 #tdiaeresis not existing
 #compose dead_cedilla 't' to tcedilla #not existing can't compose with cedilla
-#compose '\'' 'w' to '' #wacute not existing
-#compose '\'' 'W' to '' #Wacute not existing
-#compose '`'' 'w' to '' #wgrave not existing
-#compose '`' 'W' to '' #Wgrave not existing
-#compose '^' 'w' to '' #wcircumflex not existing
-#compose '^' 'W' to '' #Wcircumflex not existing
+compose '\'' 'w' to U+1E83 #wacute not existing
+compose '\'' 'W' to U+1E82 #Wacute not existing
+compose '`' 'w' to U+1E81 #wgrave not existing
+compose '`' 'W' to U+1E80 #Wgrave not existing
+compose '^' 'w' to U+1E75 #wcircumflex not existing
+compose '^' 'W' to U+1E74 #Wcircumflex not existing
 compose '\'' 'z' to zacute #is it iso
 compose '\'' 'Z' to Zacute #is it iso
-#compose '^' 'z' to '' #zcircumflex not existing not iso8859-1
-#compose '^' 'Z' to '' #Zcircumflex not existing not iso8859-1
+compose '^' 'z' to U+1E91 #zcircumflex not existing
+compose '^' 'Z' to U+1E90 #Zcircumflex not existing
 ## Powers
 compose '^' '0' to degree #keysym zerosuperior doesn't exist
 compose '^' '1' to onesuperior
@@ -495,3 +496,4 @@ compose '^' '3' to threesuperior
 #ae(acute)(altgr z + dead_acute)
 #ccedilla+acute, (udiaeresis)acute
 #dead_acute w_acute -> a thunder
+#dead_abovedot
