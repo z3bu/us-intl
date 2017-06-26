@@ -486,8 +486,12 @@ compose '\'' 'z' to zacute #is it iso
 compose '\'' 'Z' to Zacute #is it iso
 compose '^' 'z' to U+1E91 #zcircumflex not existing
 compose '^' 'Z' to U+1E90 #Zcircumflex not existing
+compose '\'' U+00C6 to U+01FB # (aring)acute
+compose '\'' U+00C5 to U+01FA # (Aring)acute
+compose '\'' U+00E6 to U+01FD #ae acute
+compose '\'' U+00E5 to U+01FC #AE acute
 ## Powers
-compose '^' '0' to degree #keysym zerosuperior doesn't exist U+2070
+compose '^' '0' to U+2070 #keysym zerosuperior doesn't exist
 compose '^' '1' to onesuperior # U+2071
 compose '^' '2' to twosuperior # U+2072
 compose '^' '3' to threesuperior # U+2073
@@ -503,8 +507,7 @@ compose '^' '=' to U+207C
 compose '^' '(' to U+207D
 compose '^' ')' to U+207E
 
-#Misc impossible
-#ae(acute)(altgr z + dead_acute)
+#Misc to do
 #ccedilla+acute, (udiaeresis)acute
-#dead_acute w_acute -> a thunder
-#dead_abovedot
+#dead_abovedot 0x02D8 dead_hook 0xfe62
+#dead_belowdot dead_macron
